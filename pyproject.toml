@@ -1,13 +1,16 @@
 [tool.poetry]
-name = "PennylanePoetry"
+name = "maxcuttest"
 version = "0.1.0"
 description = ""
 authors = ["Thanakrit_B <thanakirt47@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10"
+python = ">=3.10, <3.11"
 pennylane = "^0.40.0"
+openqaoa = "^0.2.6"
+cudaq = "^0.9.1"
+cirq = "^1.4.1"
 
 
 [build-system]
