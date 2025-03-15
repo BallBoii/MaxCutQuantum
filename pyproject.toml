@@ -3,7 +3,7 @@ name = "maxcuttest"
 version = "0.1.0"
 description = ""
 authors = ["Thanakrit_B <thanakirt47@gmail.com>"]
-readme = "README.md"
+packages = [{ include = "Utils" }]
 
 [tool.poetry.dependencies]
 python = ">=3.10, <3.11"
