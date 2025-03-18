@@ -1,4 +1,4 @@
-## Set Up CUDAQ with Conda
+## Set up CUDAQ with Conda
 
 make a conda enviroment
 ```bash
