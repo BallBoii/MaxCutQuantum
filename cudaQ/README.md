@@ -1,6 +1,6 @@
-## Set up CUDAQ with Conda
+# Set up CUDAQ with Conda
 
-# The CUDAQ is compatible with Linux Platform
+! The CUDAQ is compatible with Linux Platform
 
 make a conda enviroment
 ```bash
