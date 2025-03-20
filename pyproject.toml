@@ -11,6 +11,8 @@ pennylane = "^0.40.0"
 openqaoa = "^0.2.6"
 cudaq = "^0.9.1"
 cirq = "^1.4.1"
+amplify = "^1.3.1"
+qiskit-optimization = "^0.6.1"
 
 
 [build-system]

@@ -74,6 +74,47 @@ docs = ["sphinx", "sphinx-rtd-theme", "sphinxcontrib-apidoc"]
 test = ["black", "botocore", "flake8", "isort", "jsonschema (==3.2.0)", "pre-commit", "pylint", "pytest", "pytest-cov", "pytest-rerunfailures", "pytest-xdist[psutil]", "tox"]
 
 [[package]]
+name = "amplify"
+version = "1.3.1"
+description = "Amplify SDK for Quantum Annealing and Ising Machines"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "amplify-1.3.1-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:71127bfcbe7c979f76447aeb104d6cda2ffa45117b6d60d5fe52cb251ded5ea9"},
+    {file = "amplify-1.3.1-cp310-cp310-macosx_12_0_x86_64.whl", hash = "sha256:f4abf699fe63d5af9e69de0124bb294e54a3c5173acb6eddf80dbec2a9449aca"},
+    {file = "amplify-1.3.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ba8d3ce1b4fbaf1835339c926da1981e92f5c8ce715447b4998eda12471652a6"},
+    {file = "amplify-1.3.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0f1e23f307650ff3f24ec316efc1d3554916f4bd31b6e8b6d49f991d28e09c44"},
+    {file = "amplify-1.3.1-cp310-cp310-win_amd64.whl", hash = "sha256:886e1c4bbe17bd656950826b39571ff3f221e1ea8ef116d2ff5eb89d2dc0faed"},
+    {file = "amplify-1.3.1-cp311-cp311-macosx_12_0_arm64.whl", hash = "sha256:623474536acc45e7228cd0b4c96e5bbd2f9bd37eccf791be03442c44652da8d1"},
+    {file = "amplify-1.3.1-cp311-cp311-macosx_12_0_x86_64.whl", hash = "sha256:c06faead8a286f3d087cdd3a057825dc349ba73f98cdad3bf0e025cf54e44d06"},
+    {file = "amplify-1.3.1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8fdf2bea1d3f69f5ca9ccd25387687537fde65ff2a67eb111b83796196ba428b"},
+    {file = "amplify-1.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d5840320431fa5b280312451642d014884d5f2182b7f9c60516097377383445e"},
+    {file = "amplify-1.3.1-cp311-cp311-win_amd64.whl", hash = "sha256:c4c30eaf27ce5a7f53a9ca180618c5f1c70f71f4cf7f4c4903655fbd6051bc2a"},
+    {file = "amplify-1.3.1-cp312-cp312-macosx_12_0_arm64.whl", hash = "sha256:1b2fa41b6a2a6c41cab815f7d23cadebcc980aa7fbb86b3233325d158818a6b0"},
+    {file = "amplify-1.3.1-cp312-cp312-macosx_12_0_x86_64.whl", hash = "sha256:00334ebe5213dced8b212c89c861e88f1db9dbb1fe28226f6b451ce0288799bd"},
+    {file = "amplify-1.3.1-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:efc4d8a5373e5e8bf25290a18a1c376b9fc59b862136c5fc3859d5fb32cac3c8"},
+    {file = "amplify-1.3.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6f9920b9d169cb41270666a2bc775e3fadfd43a356db309ec0a4674d4aca268f"},
+    {file = "amplify-1.3.1-cp312-cp312-win_amd64.whl", hash = "sha256:03d401b62a3b4089f1b07ed3bc042df7d8d13f6d3c52efa92b6b47b1289c2c15"},
+    {file = "amplify-1.3.1-cp313-cp313-macosx_12_0_arm64.whl", hash = "sha256:1c22050dd28b53942ff1d59e23283a40f035621505d18f6c8b17e82fa9d8a619"},
+    {file = "amplify-1.3.1-cp313-cp313-macosx_12_0_x86_64.whl", hash = "sha256:0f858174aac13f30a1c7eab462fc230fa6a3ea134a36fabd852c0bbb76ad20bd"},
+    {file = "amplify-1.3.1-cp313-cp313-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9c94e26c7db5669b4ab154408d19249dabcc8415ad34c953b0133db1226445e7"},
+    {file = "amplify-1.3.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6ef0f357cf4fcd3796dad9c44742c325c6bf6d64ac2e082e40057f2ab654d649"},
+    {file = "amplify-1.3.1-cp313-cp313-win_amd64.whl", hash = "sha256:969e642744e77c18c19155c4a915ceb196120a9a46ace69fba9fd3fae0347397"},
+    {file = "amplify-1.3.1-cp39-cp39-macosx_12_0_arm64.whl", hash = "sha256:8bd7b30d76b6cf8faded9a310c978b679f123fb560e5aee38d68dc542195ad66"},
+    {file = "amplify-1.3.1-cp39-cp39-macosx_12_0_x86_64.whl", hash = "sha256:a224fb0119113050d43217537ffd253e8e4b535ed41266c3a6c17ee984f418b5"},
+    {file = "amplify-1.3.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:044523b5383a3c8fcacc243b83a10c11df21e79e768682263f95d52527ec4ab4"},
+    {file = "amplify-1.3.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:87a6065414ca1f3e1154af10c85974be5eeee185de30aba4118e14fdfe3bbde4"},
+    {file = "amplify-1.3.1-cp39-cp39-win_amd64.whl", hash = "sha256:fe37b19bca01fe6a894d1edbaccee3de855474ee65e719a01f40492b6a33d1c6"},
+]
+
+[package.dependencies]
+numpy = "!=1.24.0"
+typing-extensions = "*"
+
+[package.extras]
+extra = ["dwave-system (>=1.21.0)"]
+
+[[package]]
 name = "annotated-types"
 version = "0.7.0"
 description = "Reusable constraint types to use with typing.Annotated"
@@ -4223,6 +4264,22 @@ scipy = ">=1.0"
 dask = ["dask", "distributed"]
 
 [[package]]
+name = "qiskit-algorithms"
+version = "0.3.1"
+description = "Qiskit Algorithms: A library of quantum computing algorithms"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "qiskit_algorithms-0.3.1-py3-none-any.whl", hash = "sha256:d6c31d88a1ed65a9c6382c233ef10ecb9562e726f7b1b7823a0d178d63d29a0a"},
+    {file = "qiskit_algorithms-0.3.1.tar.gz", hash = "sha256:cba9c573d47c0f9508745a5a2794298084ec4f8833781b426fa9b2cea0fca794"},
+]
+
+[package.dependencies]
+numpy = ">=1.17"
+qiskit = ">=0.44"
+scipy = ">=1.4"
+
+[[package]]
 name = "qiskit-ibm-provider"
 version = "0.11.0"
 description = "Qiskit IBM Quantum Provider for accessing the quantum devices and simulators at IBM"
@@ -4267,6 +4324,32 @@ requests = ">=2.24.0"
 
 [package.extras]
 test = ["pytest", "pytest-cov (==2.10.1)", "qiskit (>=1.0.0)", "requests-mock (>=1.8.0)"]
+
+[[package]]
+name = "qiskit-optimization"
+version = "0.6.1"
+description = "Qiskit Optimization: A library for optimization applications using quantum computing"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "qiskit-optimization-0.6.1.tar.gz", hash = "sha256:0ad8c2bc83fe80657c788b5f282ce4055d0ec005c4876789e5069499ee3c00c0"},
+    {file = "qiskit_optimization-0.6.1-py3-none-any.whl", hash = "sha256:3f09f31289dfef66bbbb03b782a94d88a4ba5681c728b4b8e96884de5fc83879"},
+]
+
+[package.dependencies]
+docplex = ">=2.21.207,<2.24.231 || >2.24.231"
+networkx = ">=2.6.3"
+numpy = ">=1.17"
+qiskit = ">=0.44"
+qiskit-algorithms = ">=0.2.0"
+scipy = ">=1.9.0"
+setuptools = ">=40.1.0"
+
+[package.extras]
+cplex = ["cplex"]
+cvx = ["cvxpy"]
+gurobi = ["gurobipy"]
+matplotlib = ["matplotlib"]
 
 [[package]]
 name = "qiskit-qir"
@@ -5720,4 +5803,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10, <3.11"
-content-hash = "301a862cf870d8bd2203341e13281696ceb7712009938a2e9feca998994bc41a"
+content-hash = "6cb166aff293f4d53cb452ba5d903ae4992f826ac88cc7d8df30c5c9eec08504"
