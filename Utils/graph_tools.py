@@ -75,8 +75,31 @@ def get_graph_from_path(cls, path):
                 G.add_edge(int(node1), int(node2), weight=float(weight))
     return G
 
+@classmethod
+def evaluate_cut(self, bitstring: list[int], Graphdata) -> float:
+    """
+    Evaluates the cut value of the graph for a given partition represented by a bitstring.
+    
+    Parameters:
+        bitstring (list[int]): A list of integers (0 or 1) representing the partition of nodes.
+        
+    Returns:
+        float: The sum of weights for edges crossing the partition.
+        
+    Raises:
+        ValueError: If the length of the bitstring does not match the number of nodes.
+    """ 
+    cut_value = 0
+    for u, v, data in Graphdata:
+        if bitstring[u] != bitstring[v]:
+            cut_value += data.get('weight', 1)
+    return cut_value
+
+
+
 # Monkey-patch the nx.Graph class
 nx.Graph.draw_graph = draw_graph
 nx.Graph.draw_partition_graph = draw_partition_graph
 nx.Graph.get_random_graph = get_random_graph
 nx.Graph.get_graph_from_path = get_graph_from_path
+nx.Graph.evaluate_cut = evaluate_cut
